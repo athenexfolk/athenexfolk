@@ -1,0 +1,30 @@
+<header
+  class="h-16 flex justify-center md:justify-between items-center gap-4 px-8 py-4 text-zinc-500"
+>
+  <div class="relative flex flex-col items-center">
+    <img class="h-8 hello" src="assets/images/logo/zinc-500.svg" />
+    <p class="text-xs text-center font-bold tracking-widest">
+      AtheneXtremelyFolk
+    </p>
+  </div>
+  <nav *ngIf="isLargeScreen" class="flex gap-6 items-center">
+    <a
+      routerLink="/"
+      routerLinkActive="font-bold"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Home</a
+    >
+    <a
+      routerLink="/gallery"
+      routerLinkActive="font-bold"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Gallery</a
+    >
+    <a
+      routerLink="/about"
+      routerLinkActive="font-bold"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >About</a
+    >
+  </nav>
+</header>
